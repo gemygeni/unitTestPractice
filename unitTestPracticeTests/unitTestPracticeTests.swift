@@ -18,12 +18,18 @@ final class unitTestPracticeTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testTipCalc() throws {
+        let tc = TipCalc()
+        
+        let tip = tc.calcTip(amount: 128.51, tipPer: 50.0)
+        XCTAssertEqual(64.26, tip, accuracy: 0.01)
+    }
+    
+    func testAct(){
+        var x : Int
+        x = 4
+        XCTAssertTrue(x == 4, "x should be four")
+        
     }
 
     func testPerformanceExample() throws {
