@@ -41,7 +41,7 @@ final class MusicTests: XCTestCase {
             exp.fulfill()
         }
         
-        waitForExpectations(timeout:10.0){ error in
+        waitForExpectations(timeout: 10.0){ error in
             print(error?.localizedDescription)
         }
     }
