@@ -7,8 +7,14 @@
 
 import UIKit
 class Music{
-    func fetchMusic(completion : @escaping ([[String : Any]]?, Error)-> Void){
-        
+    var cache : [[String : Any]]?
+    
+    func fetchMusic(completion : @escaping ([[String : Any]]?, Error?)-> Void){
+        guard cache == nil else{completion(cache , nil); return}
+        let dataTask = URLSession.shared.dataTask(with: URL(string: "http://orangevalleycaa.org/api/music")!) { data, _, error in
+            completion(self.parseJson(data: data!), nil)
+        }
+        dataTask.resume()
     }
     
     func parseJson (data : Data) -> [[String : Any]]?{
