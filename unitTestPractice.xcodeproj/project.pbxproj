@@ -17,6 +17,8 @@
 		EF0767B829BA827400F9531E /* unitTestPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0767B729BA827400F9531E /* unitTestPracticeUITests.swift */; };
 		EF0767BA29BA827400F9531E /* unitTestPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0767B929BA827400F9531E /* unitTestPracticeUITestsLaunchTests.swift */; };
 		EF0767CD29BA82E400F9531E /* calctests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0767CC29BA82E400F9531E /* calctests.swift */; };
+		EF0767D429BAA56000F9531E /* MusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0767D329BAA56000F9531E /* MusicTests.swift */; };
+		EF0767D829BAB5B800F9531E /* JSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF0767D729BAB5B800F9531E /* JSON.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		EF0767B929BA827400F9531E /* unitTestPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unitTestPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EF0767CA29BA82E400F9531E /* calctests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calctests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0767CC29BA82E400F9531E /* calctests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calctests.swift; sourceTree = "<group>"; };
+		EF0767D329BAA56000F9531E /* MusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTests.swift; sourceTree = "<group>"; };
+		EF0767D729BAB5B800F9531E /* JSON.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = JSON.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				EF0767AD29BA827400F9531E /* unitTestPracticeTests.swift */,
+				EF0767D329BAA56000F9531E /* MusicTests.swift */,
+				EF0767D729BAB5B800F9531E /* JSON.txt */,
 			);
 			path = unitTestPracticeTests;
 			sourceTree = "<group>";
@@ -291,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0767D829BAB5B800F9531E /* JSON.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF0767AE29BA827400F9531E /* unitTestPracticeTests.swift in Sources */,
+				EF0767D429BAA56000F9531E /* MusicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

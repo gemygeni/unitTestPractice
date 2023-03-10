@@ -6,6 +6,15 @@
 //
 
 import UIKit
+class Music{
+    func fetchMusic(completion : @escaping ([[String : Any]]?, Error)-> Void){
+        
+    }
+    
+    func parseJson (data : Data) -> [[String : Any]]?{
+        return try? JSONSerialization.jsonObject(with: data, options: []) as? [[String : Any]]
+    }
+}
 
 class TipCalc{
     var defPerc = 0.75
